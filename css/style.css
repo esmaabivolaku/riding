@@ -49,48 +49,204 @@ header {
 }
 
 .eb-header h2 {
+  text-align: left;
+  color: rgb(63, 62, 62);
   font-size: 80px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 .eb-header p {
   font-size: 20px;
-  color: rgb(192, 147, 95);
+
+  color: #b77c69;
+}
+h2 {
+  padding: 20px;
+  color: #b77c69;
+  font-size: 60px;
+  text-align: center;
 }
 
 .eb-content-about {
   display: flex;
   align-items: flex-start;
   gap: 50px;
-  padding: 100px 120px;
+  padding: 100px 200px;
 }
 
+.eb-content-about p {
+  font-size: 30px;
+  padding: 20px;
+}
 .eb-image img {
-  width: 400px;
+  width: 450px;
   height: auto;
   border-radius: 10px;
 }
 
-.eb-details h2 {
-  color: #b77c69;
-  font-size: 36px;
-  margin-bottom: 10px;
-  position: relative;
-}
-
-.eb-details h2::after {
-  display: block;
-  width: 60px;
-  height: 3px;
-  background-color: #b77c69;
-  margin-top: 5px;
-  margin-bottom: 20px;
-}
-
 .ed-details p {
   font-size: 16px;
-  line-height: 1.8;
   color: #555;
   margin-bottom: 15px;
+}
+
+.eb-content-services {
+  padding: 50px;
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  color: #b77c69;
+}
+
+.eb-content-services h6 {
+  color: rgb(161, 159, 159);
+}
+
+.eb-content-services p {
+  color: #555;
+  font-size: 30px;
+}
+
+.eb-services1 {
+  padding: 25px;
+  margin-top: 40px;
+  display: flex;
+  gap: 60px;
+  text-align: left;
+}
+
+.eb-services1 img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.eb-services1 h3 {
+  padding: 30px;
+}
+
+.eb-services2 {
+  margin-top: 40px;
+  display: flex;
+  gap: 60px;
+  flex-direction: row-reverse;
+  text-align: left;
+}
+
+.eb-services2 img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.eb-services2 h3 {
+  padding: 30px;
+  text-align: right;
+}
+
+.eb-services3 {
+  margin-top: 40px;
+  display: flex;
+  gap: 60px;
+  text-align: left;
+}
+
+.eb-services3 img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.eb-services3 h3 {
+  padding: 30px;
+}
+
+.eb-content-pricelist {
+  padding: 120px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.eb-content-pricelist h2 {
+  text-align: center;
+  font-size: 48px;
+  color: #b77c69;
+  margin-bottom: 80px;
+}
+
+.eb-price-section {
+  margin-bottom: 70px;
+}
+.eb-price-section h3 {
+  font-size: 30px;
+  margin-bottom: 30px;
+
+  color: #b77c69;
+  font-weight: bold;
+}
+.eb-price-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding: 20px 0;
+}
+
+.eb-price-item h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.eb-price-item p {
+  font-size: 14px;
+  color: #777;
+}
+
+.eb-content-gallery {
+  padding: 40px;
+  text-align: center;
+}
+
+.eb-content-gallery h6 {
+  color: #777;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.eb-content-gallery h1 {
+  font-size: 48px;
+  margin: 10px 0 20px;
+  color: #b77c69;
+}
+.eb-content-gallery p {
+  font-size: 18px;
+}
+.eb-gallery-img {
+  padding: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.eb-gallery-img img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  display: block;
+}
+.eb-content-contact p {
+  padding: 40px;
+  text-align: center;
+  color: #777;
+  font-size: 16px;
+}
+
+.eb-content-contact h1 {
+  color: #b77c69;
+  text-align: center;
+  font-size: 60px;
+}
+
+.eb-content {
+  display: flex;
+  justify-content: center;
 }
