@@ -112,8 +112,14 @@ footer {
   text-align: center;
   padding: 10px;
   color: #797878;
+  font-size: 20px;
 }
-
+h2 {
+  text-align: center;
+  color: #b77c69;
+  margin: 30px;
+  font-size: 60px;
+}
 .eb-content-about {
   display: flex;
   align-items: flex-start;
@@ -131,9 +137,8 @@ footer {
   border-radius: 10px;
 }
 
-.ed-details p {
-  font-size: 16px;
-  color: #555;
+.eb-details p {
+  color: #807f7f;
   margin-bottom: 15px;
 }
 
@@ -209,7 +214,7 @@ footer {
 }
 
 .eb-content-pricelist {
-  padding: 120px;
+  padding: 30px;
   max-width: 1000px;
   margin: auto;
 }
@@ -225,11 +230,10 @@ footer {
   margin-bottom: 70px;
 }
 .eb-price-section h3 {
-  font-size: 30px;
+  text-align: center;
+  font-size: 40px;
   margin-bottom: 30px;
-
   color: #b77c69;
-  font-weight: bold;
 }
 .eb-price-item {
   display: flex;
@@ -239,9 +243,10 @@ footer {
   padding: 20px 0;
 }
 
-.eb-price-item h4 {
-  font-size: 18px;
+.eb-price-section h4 {
+  font-size: 25px;
   margin-bottom: 5px;
+  color: #807b7b;
 }
 .eb-price-item p {
   font-size: 14px;
@@ -281,20 +286,208 @@ footer {
   border-radius: 12px;
   display: block;
 }
+
+.eb-content-contact {
+  max-width: 1200px;
+  margin: auto;
+}
 .eb-content-contact p {
-  padding: 40px;
+  padding: 0;
+  margin-top: 60px;
   text-align: center;
   color: #777;
-  font-size: 16px;
 }
 
 .eb-content-contact h1 {
   color: #b77c69;
   text-align: center;
   font-size: 60px;
+  margin: 10px 0 70px;
 }
 
 .eb-content {
   display: flex;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.eb-contact-info {
+  flex: 1;
+}
+
+.eb-contact-info p {
+  padding: 0;
+  margin: 0 0 10px;
+  color: #777;
+  line-height: 2;
+}
+
+.eb-contact-info h3 {
+  color: #b77c69;
+  font-size: 30px;
+}
+form {
+  flex: 1;
+}
+form label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #777;
+  font-size: 14px;
+}
+form button {
+  background-color: #b77c69;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+form button:hover {
+  background-color: #b0887b;
+}
+
+.eb-content-team {
+  text-align: center;
+  padding: 50px 20px;
+  color: #2c3e50;
+}
+
+.eb-content-team h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.eb-content-team p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.eb-team-contanier {
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 40px;
+}
+.team-card {
+  background: #ffffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  width: 380px;
+  padding: 10px;
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.team-card h3 {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+.team-card p {
+  font-size: 15px;
+  color: #555;
+}
+
+.eb-content-place {
+  height: 80vh;
+  background: url("../img/place.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.eb-place {
+  background: rgba(0, 0, 0, 0.45);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+}
+
+.eb-place h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.eb-place p {
+  font-size: 22px;
+}
+.eb-content {
+  padding: 60px 15%;
+  text-align: center;
+}
+
+.eb-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.eb-content p {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #555;
+}
+
+.cards {
+  display: flex;
+  gap: 30px;
+  padding: 60px 10%;
+}
+
+.card {
+  flex: 1;
+  background: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+}
+
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.card h3 {
+  padding: 20px;
+  color: #555;
+  font-size: 22px;
+}
+.eb {
+  background: white;
+  color: #555;
+  padding: 60px;
+  text-align: center;
+}
+
+.eb h2 {
+  font-size: 40px;
+  margin-bottom: 15px;
+}
+.eb p {
+  margin-bottom: 25px;
+}
+
+.eb a {
+  text-decoration: none;
+  background: #b0887b;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: bold;
 }
