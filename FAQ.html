@@ -24,5 +24,85 @@
         </ul>
       </nav>
     </div>
+
+    <div class="eb-content-faq">
+      <div>
+        <h1>FAQ - Frequently Asked Questions</h1>
+        <p>
+          Find answers to the most common questions about our riding club and
+          activities.
+        </p>
+      </div>
+
+      <div class="eb-faq-container">
+        <div class="eb-faq-item">
+          <div class="eb-faq-question">
+            What should I wear for a horse riding session?
+          </div>
+          <div class="eb-faq-answer">
+            <p>
+              We recommend wearing comfortable pants, boots or closed shoes, and
+              a helmet. Avoid loose scarves or jewelry.
+            </p>
+          </div>
+        </div>
+
+        <div class="eb-faq-item">
+          <div class="eb-faq-question">
+            Do I need previous riding experience?
+          </div>
+          <div class="eb-faq-answer">
+            <p>
+              No! Our instructors cater to beginners as well as experienced
+              riders. Everyone is welcome.
+            </p>
+          </div>
+        </div>
+
+        <div class="eb-faq-item">
+          <div class="eb-faq-question">Can children participate?</div>
+          <div class="eb-faq-answer">
+            <p>
+              Yes, children aged 6 and above can join our guided sessions, with
+              parental supervision and safety gear provided.
+            </p>
+          </div>
+        </div>
+
+        <div class="eb-faq-item">
+          <div class="eb-faq-question">How do I book a riding session?</div>
+          <div class="eb-faq-answer">
+            <p>
+              You can book online via our
+              <a href="contact.html">Contact</a> page or call us directly to
+              reserve your spot.
+            </p>
+          </div>
+        </div>
+
+        <div class="eb-faq-item">
+          <div class="eb-faq-question">What if it rains on my booking day?</div>
+          <div class="eb-faq-answer">
+            <p>
+              In case of bad weather, sessions will be rescheduled or refunded
+              depending on your preference.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>©2025 Riding horses. All right reserved</p>
+    </footer>
+    <script>
+      const faqItems = document.querySelectorAll(".eb-faq-item");
+
+      faqItems.forEach((item) => {
+        const question = item.querySelector(".eb-faq-question");
+        question.addEventListener("click", () => {
+          item.classList.toggle("active");
+        });
+      });
+    </script>
   </body>
 </html>
