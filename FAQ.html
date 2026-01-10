@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Riding Club</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
   </head>
   <body>
     <div class="eb-container-home">
@@ -27,7 +28,10 @@
 
     <div class="eb-content-faq">
       <div>
-        <h1>FAQ - Frequently Asked Questions</h1>
+        <h1>
+          FAQ <br />
+          Frequently Asked Questions
+        </h1>
         <p>
           Find answers to the most common questions about our riding club and
           activities.
@@ -37,7 +41,7 @@
       <div class="eb-faq-container">
         <div class="eb-faq-item">
           <div class="eb-faq-question">
-            What should I wear for a horse riding session?
+            <h3>What should I wear for a horse riding session?</h3>
           </div>
           <div class="eb-faq-answer">
             <p>
@@ -49,7 +53,7 @@
 
         <div class="eb-faq-item">
           <div class="eb-faq-question">
-            Do I need previous riding experience?
+            <h3>Do I need previous riding experience?</h3>
           </div>
           <div class="eb-faq-answer">
             <p>
@@ -60,7 +64,9 @@
         </div>
 
         <div class="eb-faq-item">
-          <div class="eb-faq-question">Can children participate?</div>
+          <div class="eb-faq-question">
+            <h3>Can children participate?</h3>
+          </div>
           <div class="eb-faq-answer">
             <p>
               Yes, children aged 6 and above can join our guided sessions, with
@@ -70,7 +76,9 @@
         </div>
 
         <div class="eb-faq-item">
-          <div class="eb-faq-question">How do I book a riding session?</div>
+          <div class="eb-faq-question">
+            <h3>How do I book a riding session?</h3>
+          </div>
           <div class="eb-faq-answer">
             <p>
               You can book online via our
@@ -81,7 +89,9 @@
         </div>
 
         <div class="eb-faq-item">
-          <div class="eb-faq-question">What if it rains on my booking day?</div>
+          <div class="eb-faq-question">
+            <h3>What if it rains on my booking day?</h3>
+          </div>
           <div class="eb-faq-answer">
             <p>
               In case of bad weather, sessions will be rescheduled or refunded
@@ -94,15 +104,5 @@
     <footer>
       <p>©2025 Riding horses. All right reserved</p>
     </footer>
-    <script>
-      const faqItems = document.querySelectorAll(".eb-faq-item");
-
-      faqItems.forEach((item) => {
-        const question = item.querySelector(".eb-faq-question");
-        question.addEventListener("click", () => {
-          item.classList.toggle("active");
-        });
-      });
-    </script>
   </body>
 </html>

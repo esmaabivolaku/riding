@@ -69,6 +69,7 @@ nav .eb-logo {
 .eb-header-content p {
   font-size: 20px;
   color: var(--primary-light);
+  text-align: left;
 }
 
 .eb-nav-links a {
@@ -138,7 +139,7 @@ h2 {
 }
 
 .eb-details p {
-  color: #807f7f;
+  color: #000000;
   margin-bottom: 15px;
 }
 
@@ -287,148 +288,31 @@ h2 {
   display: block;
 }
 
-.eb-content-contact {
-  max-width: 1200px;
-  margin: auto;
-}
-.eb-content-contact p {
-  padding: 0;
-  margin-top: 60px;
-  text-align: center;
-  color: #777;
-}
-
-.eb-content-contact h1 {
-  color: #b77c69;
-  text-align: center;
-  font-size: 60px;
-  margin: 10px 0 70px;
-}
-
-.eb-content {
-  display: flex;
-  justify-content: space-between;
-  gap: 80px;
-}
-
-.eb-contact-info {
-  flex: 1;
-}
-
-.eb-contact-info p {
-  padding: 0;
-  margin: 0 0 10px;
-  color: #777;
-  line-height: 2;
-}
-
-.eb-contact-info h3 {
-  color: #b77c69;
-  font-size: 30px;
-}
-form {
-  flex: 1;
-}
-form label {
-  display: block;
-  margin-bottom: 20px;
-  font-weight: bold;
-  color: #555;
-}
-
-form input,
-form textarea {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 10px;
-  border: 1px solid #777;
-  font-size: 14px;
-}
-form button {
-  background-color: #b77c69;
-  color: white;
-  border: none;
-  padding: 14px;
-  border-radius: 6px;
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-form button:hover {
-  background-color: #b0887b;
-}
-
-.eb-content-team {
-  text-align: center;
-  padding: 50px 20px;
-  color: #2c3e50;
-}
-
-.eb-content-team h2 {
-  font-size: 60px;
-  margin-bottom: 10px;
-}
-
-.eb-content-team p {
-  font-size: 20px;
-  margin-bottom: 40px;
-  color: #555;
-}
-
-.eb-team-contanier {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-}
-.team-card {
-  background: #ffffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  width: 380px;
-  padding: 10px;
-}
-
-.team-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-.team-card h3 {
-  font-size: 30px;
-  margin-bottom: 5px;
-}
-.team-card p {
-  font-size: 15px;
-  color: #555;
-}
-
 .eb-content-place {
-  height: 80vh;
-  background: url("../img/place.jpg") center/cover no-repeat;
+  min-height: 100vh;
   position: relative;
 }
 
 .eb-place {
-  background: rgba(0, 0, 0, 0.45);
-  height: 100%;
+  background: url("../img/place.jpg") center/cover no-repeat;
+  background-size: cover;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #fff;
-  text-align: center;
 }
 
 .eb-place h1 {
   font-size: 60px;
-  margin-bottom: 10px;
+  color: #363434;
 }
 
 .eb-place p {
   font-size: 22px;
+  color: #363434;
 }
-.eb-content {
+.eb-content-- {
   padding: 60px 15%;
   text-align: center;
 }
@@ -469,7 +353,7 @@ form button:hover {
   font-size: 22px;
 }
 .eb {
-  background: white;
+  background: rgb(255, 248, 248);
   color: #555;
   padding: 60px;
   text-align: center;
@@ -509,6 +393,7 @@ p {
 
 .eb-blog-content p {
   color: #777;
+  margin-bottom: 20px;
 }
 .eb-blog-grid {
   display: grid;
@@ -602,14 +487,135 @@ p {
   color: #000;
   cursor: pointer;
 }
+.eb-content-team {
+  text-align: center;
+  padding: 0px 20px;
+  color: #2c3e50;
+}
+
+.eb-content-team h2 {
+  font-size: 60px;
+  margin-bottom: 10px;
+}
+
+.eb-content-team p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.eb-team-contanier {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+.team-card {
+  background: #ffffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.team-card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 6px;
+}
+.team-card h3 {
+  text-align: center;
+  font-size: 30px;
+}
+.team-card p {
+  font-size: 15px;
+  color: #555;
+}
+
+.eb-content-contact {
+  max-width: 1200px;
+  margin: auto;
+}
+.eb-content-contact p {
+  padding: 0;
+  margin-top: 10px;
+  text-align: center;
+  color: #777;
+}
+
+.eb-content-contact h1 {
+  color: #b77c69;
+  text-align: center;
+  font-size: 60px;
+}
+
+.eb-contact {
+  margin: 60px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.eb-contact-info p,
+h3 {
+  flex: 1;
+  text-align: left;
+}
+
+.eb-contact-info p {
+  padding: 0;
+  margin: 0 0 10px;
+  color: #777;
+  line-height: 2;
+}
+
+.eb-contact-info h3 {
+  color: #b77c69;
+  font-size: 30px;
+}
+form {
+  flex: 1;
+}
+form label {
+  display: block;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #777;
+  font-size: 14px;
+}
+form button {
+  background-color: #b77c69;
+  color: white;
+  border: none;
+  padding: 14px;
+  border-radius: 6px;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+form button:hover {
+  background-color: #b0887b;
+}
 
 .eb-content-faq {
   margin: 10%;
+  padding: 30px;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
+  background-color: #f8f7f7;
 }
 .eb-content-faq h1 {
+  text-align: center;
   font-size: 36px;
   color: #b77c69;
 }
@@ -626,12 +632,13 @@ p {
   padding: 15px 0;
 }
 .eb-faq-question {
+  color: var(--primary-light);
   font-size: 18px;
   font-weight: 600;
+  line-height: 1.4;
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  gap: 30px;
   align-items: center;
 }
 .eb-faq-question::after {
@@ -643,12 +650,15 @@ p {
   transform: rotate(180deg);
 }
 .eb-faq-answer {
-  margin-top: 10px;
   font-size: 16px;
   line-height: 1.6;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
   color: #333;
-  display: none;
 }
 .eb-faq-item.active .eb-faq-answer {
-  display: block;
+  max-height: 200px;
+  opacity: 1;
 }
