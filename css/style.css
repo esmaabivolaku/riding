@@ -1,6 +1,5 @@
 :root {
   --primary-light: #b77c69;
-  --primary-dark: ;
 }
 
 * {
@@ -12,6 +11,13 @@
 body {
   font-family: "Merriweather", serif;
   font-weight: 400;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
 }
 
 nav a {
@@ -143,115 +149,105 @@ h2 {
   margin-bottom: 15px;
 }
 
+.container-home {
+  padding: 40px 20px;
+  font-family: "Merriweather", serif;
+  background: #f9f9fb;
+}
+
 .eb-content-services {
-  padding: 50px;
-  text-align: center;
-  font-size: 36px;
-  margin-bottom: 40px;
-  color: #b77c69;
-}
-
-.eb-content-services h6 {
-  color: rgb(161, 159, 159);
-}
-
-.eb-content-services p {
-  color: #555;
-  font-size: 30px;
-}
-
-.eb-services1 {
-  padding: 25px;
-  margin-top: 40px;
-  display: flex;
-  gap: 60px;
-  text-align: left;
-}
-
-.eb-services1 img {
-  width: 600px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.eb-services1 h3 {
-  padding: 30px;
-}
-
-.eb-services2 {
-  margin-top: 40px;
-  display: flex;
-  gap: 60px;
-  flex-direction: row-reverse;
-  text-align: left;
-}
-
-.eb-services2 img {
-  width: 600px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.eb-services2 h3 {
-  padding: 30px;
-  text-align: right;
-}
-
-.eb-services3 {
-  margin-top: 40px;
-  display: flex;
-  gap: 60px;
-  text-align: left;
-}
-
-.eb-services3 img {
-  width: 600px;
-  height: auto;
-  border-radius: 10px;
-}
-
-.eb-services3 h3 {
-  padding: 30px;
-}
-
-.eb-content-pricelist {
-  padding: 30px;
-  max-width: 1000px;
-  margin: auto;
-}
-
-.eb-content-pricelist h2 {
-  text-align: center;
-  font-size: 48px;
-  color: #b77c69;
-  margin-bottom: 80px;
-}
-
-.eb-price-section {
-  margin-bottom: 70px;
-}
-.eb-price-section h3 {
-  text-align: center;
-  font-size: 40px;
-  margin-bottom: 30px;
-  color: #b77c69;
-}
-.eb-price-item {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  border-bottom: 1px solid #ddd;
-  padding: 20px 0;
+  align-items: end;
+  padding: 60px 20px;
+  font-family: "Marriweather", serif;
+  gap: 80px;
+  width: 100%;
+  margin-bottom: 100px;
 }
 
-.eb-price-section h4 {
-  font-size: 25px;
-  margin-bottom: 5px;
-  color: #807b7b;
+.eb-services-text {
+  flex: 1;
+  min-width: 300px;
 }
-.eb-price-item p {
-  font-size: 14px;
+
+.eb-services-text h2 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: #b77c69;
+}
+
+.eb-services-text p {
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+  margin: 30px;
   color: #777;
+}
+
+.eb-services-text ul {
+  list-style: none;
+  padding: 0;
+  font-size: 25px;
+  color: #b77c69;
+}
+.eb-services-text ul li {
+  margin-left: 80px;
+  margin-bottom: 20px;
+}
+
+.eb-services-image {
+  flex: 1;
+  min-width: 300px;
+}
+
+.eb-services-image img {
+  width: 70%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.eb-pricelist {
+  font-family: "Merriweather", serif;
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.eb-pricelist h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 50px;
+  color: #b77c69;
+}
+
+.eb-pricelist table {
+  margin: 50px;
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.eb-pricelist th,
+.eb-pricelist td {
+  padding: 20px 20px;
+  text-align: left;
+}
+
+.eb-pricelist thead th {
+  background: #b77c69;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px 8px 0 0;
+}
+
+.eb-pricelist tbody tr {
+  background: #fff;
+  border-bottom: 1px solid #e0dcd5;
+}
+
+.eb-pricelist tbody tr:nth-child(even) {
+  background: #f3f0eb;
 }
 
 .eb-content-gallery {
@@ -514,7 +510,7 @@ p {
   background: #ffffffff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-  width: 200px;
+  width: 300px;
   padding: 10px;
   margin: 10px;
 }
