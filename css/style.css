@@ -20,45 +20,99 @@ h3 {
   font-weight: 700;
 }
 
-nav a {
-  text-decoration: none;
-  color: inherit;
+.eb-navbar {
+  width: 100%;
+  background-color: #1b1b1b;
+  padding: 15px 40px;
+  z-index: 1000;
+}
+
+.eb-navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 40px;
+  padding-left: 60px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.eb-navbar .navbar-brand:hover {
+  color: #b77c69;
+}
+
+.eb-navbar .nav-link {
+  color: #ffffff;
+  font-size: 20px;
+  margin-left: 18px;
+  transition: color 0.3s ease;
+}
+
+.eb-navbar .nav-link:hover {
+  color: #b77c69;
+}
+
+.eb-navbar .nav-link.active {
+  color: #b77c69;
+  font-weight: 600;
+}
+
+.navbar-toggler {
+  border-color: #ffffff;
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 991px) {
+  .eb-navbar .navbar-collapse {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background: #111;
+    transition: right 0.3s ease;
+    padding-top: 80px;
+    z-index: 9999;
+  }
+
+  .eb-navbar .navbar-collapse.show {
+    right: 0;
+  }
+
+  .eb-navbar .nav-link {
+    color: white;
+    padding: 15px 20px;
+    display: block;
+  }
+
+  .navbar-toggler {
+    z-index: 10000;
+  }
 }
 
 #eb-header {
   width: 100vw;
-  height: 90vh;
+  height: 100vh;
   min-height: 100vh;
   background-image: url(../img/header.jpg);
   background-position: center 40px;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 40px;
+  box-sizing: border-box;
 }
 .eb-container-home {
   max-width: 1200px;
   margin: auto;
 }
 
-nav {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: white;
-  font-size: 20px;
-  padding: 16px;
-}
 nav ul {
   display: flex;
   list-style: none;
   gap: 32px;
 }
 
-nav .eb-logo {
-  margin: 0;
-  font-weight: 400;
-  font-size: 20px;
-}
 .eb-header-content {
   display: flex;
   flex-direction: column;
@@ -78,10 +132,6 @@ nav .eb-logo {
   text-align: left;
 }
 
-.eb-nav-links a {
-  text-decoration: none;
-  color: black;
-}
 #about {
   margin: 100px;
   color: #888787;
