@@ -107,12 +107,6 @@ h3 {
   margin: auto;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
-  gap: 32px;
-}
-
 .eb-header-content {
   display: flex;
   flex-direction: column;
@@ -186,7 +180,7 @@ h2 {
 
 .eb-content-about p {
   font-size: 30px;
-  padding: 20px;
+  padding: 10px;
 }
 .eb-image img {
   width: 450px;
@@ -196,7 +190,7 @@ h2 {
 
 .eb-details p {
   color: #000000;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .container-home {
