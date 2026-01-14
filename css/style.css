@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
 body {
   font-family: "Merriweather", serif;
   font-weight: 400;
@@ -29,7 +33,7 @@ h3 {
 
 .eb-navbar .navbar-brand {
   color: #ffffff;
-  font-size: 40px;
+  font-size: 32px;
   padding-left: 60px;
   font-weight: 700;
   letter-spacing: 1px;
@@ -92,54 +96,51 @@ h3 {
 }
 
 #eb-header {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   min-height: 100vh;
   background-image: url(../img/header.jpg);
-  background-position: center 40px;
-  background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 40px;
-  box-sizing: border-box;
-}
-.eb-container-home {
-  max-width: 1200px;
-  margin: auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
 }
 
 .eb-header-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 200px;
+  padding: 0 20px;
 }
 
 .eb-header-content h1 {
-  font-size: 80px;
-  font-weight: 500;
+  font-size: clamp(36px, 6vw, 80px);
 }
 
 .eb-header-content p {
-  font-size: 20px;
+  font-size: clamp(16px, 2.5vw, 20px);
   color: var(--primary-light);
   text-align: left;
 }
 
 #about {
-  margin: 100px;
+  padding: 80px 20px;
   color: #888787;
 }
 
 #about img {
-  height: 400px;
-  margin-left: 30%;
+  border-radius: 10px;
 }
+
 #eb-services {
   background: #fdfdfd;
   text-align: center;
   padding: 20px;
   color: #888787;
+}
+
+.service img {
+  border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
 }
 .row h3 {
   color: #b77c69;
@@ -154,11 +155,22 @@ h3 {
   color: #b77c69;
   font-size: 60px;
 }
-.row img {
-  margin: 0px;
-  width: 500px;
-  border-radius: 10px;
+
+@media (max-width: 768px) {
+  #eb-header {
+    min-height: 90vh;
+  }
+  .eb-header-content {
+    text-align: center;
+  }
+  .container-home h1,
+  .row h3,
+  h2 {
+    flex-direction: column;
+    font-size: 36px;
+  }
 }
+
 footer {
   text-align: center;
   padding: 10px;
@@ -173,7 +185,7 @@ h2 {
 }
 .eb-content-about {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 50px;
   padding: 100px 200px;
 }
@@ -183,7 +195,7 @@ h2 {
   padding: 10px;
 }
 .eb-image img {
-  width: 450px;
+  width: 100vw;
   height: auto;
   border-radius: 10px;
 }
@@ -199,15 +211,39 @@ h2 {
   background: #f9f9fb;
 }
 
+@media (max-width: 768px) {
+  .eb-content-about {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 20px;
+  }
+
+  .eb-content-about p {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .eb-content-about {
+    padding: 20px 10px;
+    gap: 15px;
+  }
+  .eb-content-about p {
+    font-size: 18px;
+  }
+}
 .eb-content-services {
   display: flex;
   justify-content: space-between;
   align-items: end;
   padding: 60px 20px;
-  font-family: "Marriweather", serif;
+  font-family: "Merriweather", serif;
   gap: 80px;
   width: 100%;
   margin-bottom: 100px;
+  flex-wrap: wrap;
 }
 
 .eb-services-text {
@@ -249,6 +285,35 @@ h2 {
   width: 70%;
   border-radius: 10px;
   object-fit: cover;
+}
+@media (max-width: 768px) {
+  .eb-content-services {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    gap: 30px;
+  }
+  .eb-services-text {
+    text-align: center;
+  }
+
+  .eb-services-text h2 {
+    font-size: 40px;
+  }
+
+  .eb-services-text p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  .eb-services-text ul li {
+    margin-left: 0;
+    font-size: 20px;
+  }
+
+  .eb-services-image img {
+    width: 100%;
+    max-width: 400px;
+  }
 }
 
 .eb-pricelist {
@@ -294,6 +359,31 @@ h2 {
   background: #f3f0eb;
 }
 
+@media (max-width: 768px) {
+  .eb-pricelist h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .eb-pricelist table {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin: 20px 0;
+  }
+
+  .eb-pricelist th,
+  .eb-pricelist td {
+    padding: 10px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .eb-pricelist tbody tr {
+    display: table-row;
+  }
+}
+
 .eb-content-gallery {
   padding: 40px;
   text-align: center;
@@ -327,7 +417,36 @@ h2 {
   border-radius: 12px;
   display: block;
 }
+@media (max-width: 768px) {
+  .eb-content-gallery h1 {
+    font-size: 32px;
+  }
 
+  .eb-content-gallery p {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .eb-gallery-img {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 30px 0;
+  }
+
+  .eb-gallery-img img {
+    height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eb-gallery-img {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .eb-gallery-img img {
+    height: 200px;
+  }
+}
 .eb-content-place {
   min-height: 100vh;
   position: relative;
@@ -416,6 +535,52 @@ h2 {
   font-weight: bold;
 }
 
+@media (max-width: 768px) {
+  .eb-place h1 {
+    font-size: 36px;
+  }
+  .eb-place p {
+    font-size: 16px;
+  }
+
+  .eb-content-- {
+    padding: 30px 10%;
+  }
+
+  .eb-content-- h2 {
+    font-size: 28px;
+  }
+
+  .eb-content-- p {
+    font-size: 16px;
+  }
+  .cards {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 10%;
+  }
+  .card img {
+    height: 200px;
+  }
+  .card h3 {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .eb {
+    padding: 30px 15px;
+  }
+  .eb h2 {
+    font-size: 28px;
+  }
+  .eb p {
+    font-size: 16px;
+  }
+  .eb a {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
 .eb-blog-content {
   width: 90%;
   margin: 80px auto;
@@ -527,10 +692,52 @@ p {
   color: #000;
   cursor: pointer;
 }
+@media (max-width: 768px) {
+  .eb-blog-content h1 {
+    font-size: 36px;
+  }
+  .eb-blog-content p {
+    font-size: 16px;
+  }
+  .eb-blog-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .eb-blog-card-inner {
+    height: 350px;
+  }
+  .eb-blog-card-front .eb-blog-tag {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .eb-blog-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  .eb-blog-card-inner {
+    height: 300px;
+  }
+  .eb-blog-card-front .eb-blog-tag {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  .eb-blog-open {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  .eb-blog-close {
+    font-size: 18px;
+  }
+}
 .eb-content-team {
   text-align: center;
   padding: 0px 20px;
-  color: #2c3e50;
+  color: #b77c69;
+  margin-top: 15px;
 }
 
 .eb-content-team h2 {
@@ -571,6 +778,48 @@ p {
 .team-card p {
   font-size: 15px;
   color: #555;
+}
+@media (max-width: 768px) {
+  .eb-content-team h2 {
+    font-size: 45px;
+  }
+
+  .eb-contact-team p {
+    font-size: 18px;
+  }
+
+  .team-card {
+    width: 45%;
+    padding: 8px;
+  }
+  .team-card h3 {
+    font-size: 25px;
+  }
+
+  .team-card p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eb-content-team h2 {
+    font-size: 32px;
+  }
+  .eb-content-team p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  .team-card {
+    width: 90%;
+    padding: 5px;
+  }
+  .team-card h3 {
+    font-size: 22px;
+  }
+
+  .team-card p {
+    font-size: 13px;
+  }
 }
 
 .eb-content-contact {
@@ -646,6 +895,60 @@ form button:hover {
   background-color: #b0887b;
 }
 
+@media (max-width: 768px) {
+  .eb-content-contact h1 {
+    font-size: 45px;
+  }
+  .eb-content-contact p {
+    font-size: 18px;
+  }
+  .eb-contact {
+    flex-direction: column;
+    gap: 40px;
+  }
+  .eb-contact-info h3 {
+    font-size: 25px;
+  }
+  .eb-contact-info p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .eb-content-contact h1 {
+    font-size: 32px;
+  }
+  .eb-content-contact p {
+    font-size: 16px;
+    margin-bottom: 15px;
+  }
+  .eb-contact {
+    flex-direction: column;
+    gap: 30px;
+    margin: 30px 0;
+  }
+  .eb-contact-info h3 {
+    font-size: 22px;
+  }
+  .eb-contact-info p {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  form input,
+  form textarea {
+    font-size: 13px;
+    padding: 10px;
+  }
+  form button {
+    font-size: 15px;
+    padding: 12pz;
+  }
+}
 .eb-content-faq {
   margin: 10%;
   padding: 30px;
@@ -653,6 +956,7 @@ form button:hover {
   justify-content: center;
   gap: 40px;
   background-color: #f8f7f7;
+  flex-wrap: wrap;
 }
 .eb-content-faq h1 {
   text-align: center;
@@ -701,4 +1005,43 @@ form button:hover {
 .eb-faq-item.active .eb-faq-answer {
   max-height: 200px;
   opacity: 1;
+}
+@media (max-width: 768px) {
+  .eb-content-faq {
+    flex-direction: column;
+    gap: 30px;
+    margin: 5%;
+    padding: 20px;
+  }
+  .eb-content-faq h1 {
+    font-size: 30px;
+  }
+  .eb-content-faq p {
+    font-size: 15px;
+  }
+  .eb-faq-question {
+    font-size: 16px;
+  }
+  .eb-faq-answer {
+    font-size: 14px;
+  }
+}
+@media (max-width: 480px) {
+  .eb-content-faq {
+    margin: 3%;
+    padding: 15px;
+    gap: 20px;
+  }
+  .eb-content-faq h1 {
+    font-size: 26px;
+  }
+  .eb-content-faq p {
+    font-size: 14px;
+  }
+  .eb-faq-question {
+    font-size: 15px;
+  }
+  .eb-faq-answer {
+    font-size: 13px;
+  }
 }
