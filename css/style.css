@@ -26,13 +26,13 @@ h3 {
 
 .eb-navbar {
   width: 100%;
-  background-color: #1b1b1b;
+  background-color: white;
   padding: 15px 40px;
   z-index: 1000;
 }
 
 .eb-navbar .navbar-brand {
-  color: #ffffff;
+  color: black;
   font-size: 32px;
   padding-left: 60px;
   font-weight: 700;
@@ -44,7 +44,7 @@ h3 {
 }
 
 .eb-navbar .nav-link {
-  color: #ffffff;
+  color: black;
   font-size: 20px;
   margin-left: 18px;
   transition: color 0.3s ease;
@@ -291,7 +291,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     padding: 30px 20px;
-    gap: 30px;
+    gap: 10px;
   }
   .eb-services-text {
     text-align: center;
@@ -312,7 +312,7 @@ h2 {
 
   .eb-services-image img {
     width: 100%;
-    max-width: 400px;
+    max-width: 200px;
   }
 }
 
